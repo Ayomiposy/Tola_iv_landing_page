@@ -271,6 +271,7 @@ body p {
 
 .program-content h2 {
   font-size: 3rem;
+  text-align: center;
 }
 
 .program-content ul {
@@ -315,7 +316,7 @@ body p {
 }
 
 .lastImage p {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .Rsvp {
@@ -391,6 +392,7 @@ body p {
   .Rsvp {
     flex-direction: column;
     text-align: center;
+    margin-top: 200px;
   }
 
   .rsvp-content h2 {
