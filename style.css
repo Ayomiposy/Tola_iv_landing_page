@@ -1,0 +1,476 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: beige;
+}
+
+body h2, body h1 {
+    font-family: "Poiret One", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body p {
+    font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.navbar {
+  background-color: #ffffff;
+  color: black;
+  padding: 0px 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+  color: chocolate;
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@media (max-width: 991px) {
+  .navbar h1 {
+    font-size: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 0px 5%;
+    height: auto;
+  }
+
+  .navbar nav ul li a {
+    gap: 10px;
+    font-weight: 200;
+  }
+}
+
+.navbar nav ul li a:hover {
+  color: chocolate;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.Home,
+.homeImage {
+  width: 100%;
+}
+
+.Home img {
+  width: 100%;
+  height: 50%;
+  animation: slideUp 3s ease-in-out;
+}
+
+.welcomeMessage {
+  text-align: center;
+  padding: 20px;
+  background-color: beige;
+  position: absolute;
+  top: 80em;
+  left: 80em;
+  transform: translate(-50%, -50%);
+  box-shadow: 20px 30px 2px rgba(163, 116, 116, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeMessage > button {
+  align-self: flex-end;
+  padding: 10px;
+  font-size: 30px;
+}
+
+@media (max-width: 991px) {
+  .welcomeMessage {
+    top: 30em;
+    left: 20em;
+  }
+
+  .welcomeMessage > button {
+    align-self: flex-start;
+    padding: 8px;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+}
+
+.welcomeMessage h2 {
+  font-size: 4em;
+  margin-bottom: 10px;
+  text-align: right;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: chocolate;
+  line-height: 1.5;
+}
+
+.welcomeMessage p {
+  font-size: 2em;
+  color: #555;
+  text-align: right;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+@media (max-width: 991px) {
+  .welcomeMessage h2 {
+    font-size: 1.3em;
+    text-align: left;
+  }
+
+  .welcomeMessage p {
+    font-size: 0.9em;
+    text-align: left;
+  }
+}
+
+.backgroundLeft {
+  background: linear-gradient(
+    to right,
+    chocolate 0%,
+    #ac0808 70%,
+    #ffffff 70%,
+    #ffffff 100%
+  ) !important;
+  height: 200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+@media (max-width: 991px) {
+  .backgroundLeft {
+    height: 200px;
+  }
+}
+
+.hero {
+  background: linear-gradient(
+    to right,
+    chocolate 0%,
+    #ac0808 70%,
+    #ffffff 70%,
+    #ffffff 100%
+  ) !important;
+  margin-top: -30px;
+  display: flex;
+  align-items: left;
+  padding-bottom: 100px;
+  padding-left: 30px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  text-align: left;
+  color: white;
+  align-self: flex-start;
+  width: 500px;
+}
+
+.hero-content p {
+  font-size: 2rem;
+  color: white;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    width: 200px;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+    width: 200px;
+  }
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  animation: slideUp 1s ease-in-out;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 70%;
+}
+
+.gallery-images img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .gallery-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .gallery-images {
+    width: 100%;
+  }
+}
+
+.program {
+  background: chocolate;
+  margin-top: 100px;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.program img {
+  width: 50%;
+}
+
+.program-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.program-content h2 {
+  font-size: 3rem;
+}
+
+.program-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  font-size: 2rem;
+  width: 90%;
+}
+
+@media (max-width: 991px) {
+  .program {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .program img {
+    width: 100%;
+  }
+
+  .program-content ul {
+    color: white;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .program-content ul li {
+    width: 100%;
+  }
+}
+
+.lastImage {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.lastImage h2 {
+  font-size: 3rem;
+}
+
+.lastImage p {
+  font-size: 2rem;
+}
+
+.Rsvp {
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rsvp-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  background-color: chocolate;
+  padding: 100px;
+  font-size: 2em;
+  color: white;
+}
+
+.rsvp-content h2 {
+  font-size: 2em;
+}
+
+.rsvp-content p {
+  margin-top: -10px;
+  width: 80%;
+}
+
+.rsvp-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.rsvp-content form input {
+  height: 30px;
+}
+
+.rsvp-content form select,
+.rsvp-content form button {
+  height: 30px;
+  width: 40%;
+}
+
+.greetingNote {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.greetingNote p {
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: black;
+  text-align: left;
+}
+
+.greetingNote img {
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .Rsvp {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rsvp-content h2 {
+    font-size: 1.5em;
+  }
+
+  .rsvp-content p {
+    width: 100%;
+  }
+
+  .rsvp-content {
+    font-size: 1.5em;
+    padding: 50px;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .greetingNote {
+    width: 95%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .greetingNote p {
+    font-size: 1.2em;
+    color: black;
+    text-align: left;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #555;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
